@@ -1,0 +1,24 @@
+.wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 1236px;  /* add 36px to take into account 2x padding which is assimilarted by border box fix */
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; /*gets rid of negative margin*/
+    
+    
+&--medium {
+    max-width: 976px;
+}
+.wrapper {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+&--b-margin {
+    margin-bottom: 1rem;
+    @mixin atSmall {
+        margin-bottom: 3.875rem;
+    }
+}
+}
