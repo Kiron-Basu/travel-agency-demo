@@ -7,6 +7,8 @@
 @import "modules/_wrapper";
 @import "modules/_row";
 @import "modules/_headline";
+@import "modules/_section-title";
+@import "modules/_feature-item";
 @import "modules/_generic-content-container";
 @import "modules/_page-section";
 

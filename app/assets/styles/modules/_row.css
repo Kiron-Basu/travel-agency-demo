@@ -3,11 +3,19 @@
 @mixin clearfix;
 
 &--gutters {
-    margin-right: -65px; /* using negastive margin to elminate right hand spacing by dragging it to the right*/
+    margin-right: -65px; /* using negative margin to elminate right hand spacing by dragging it to the right*/
+}
+
+&--gutters-large {
+    margin-right: -100px; /* using negastive margin to elminate right hand spacing by dragging it to the right*/
 }
 
 &--gutters > div {
         padding-right: 65px;
+}
+
+&--gutters-large > div {
+    padding-right: 100px;
 }
 
 &__b-margin-until-medium {
@@ -26,6 +34,11 @@
                 width: 37%;
             }
         }   
+        
+        &__medium-6 {
+            float: left;
+            width: 50%;
+            }   
     
 
     &__medium-8 {
