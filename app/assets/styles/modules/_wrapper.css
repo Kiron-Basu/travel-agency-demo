@@ -6,6 +6,10 @@
     margin-left: auto;
     margin-right: auto;
     overflow: hidden; /*gets rid of negative margin*/
+
+&--narrow {
+    max-width: 470px;
+}
    
 &--no-padding-until-medium {
     padding-left: 0;
