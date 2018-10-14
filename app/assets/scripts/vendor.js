@@ -1,0 +1,1 @@
+import 'lazysizes'; //guess no vaiable needed as just works out of box
