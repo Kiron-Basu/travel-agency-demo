@@ -35,7 +35,7 @@
         left: auto;
         transform: translateX(0);  
         .site-header--dark & {   /* & = descendant selector */
-            transform: scale(.57);
+            transform: scale(.55);
         }
     }
 }
