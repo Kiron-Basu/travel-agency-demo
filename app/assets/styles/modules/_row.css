@@ -88,7 +88,7 @@
     padding-top: 80px;
 }
 /* flex box to adjust equal height of of boxes */
-&--equal-height-at-medium {
+.flexbox &--equal-height-at-medium {
     @mixin atMedium {
         display: flex;
     }
@@ -98,7 +98,7 @@
       }
     }
 
-    &--equal-height-at-large {
+  .flexbox  &--equal-height-at-large {
         @mixin atLarge {
             display: flex;
         }
