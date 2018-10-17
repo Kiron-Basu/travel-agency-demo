@@ -12,7 +12,7 @@ gulp.task('styles', function() {
        .pipe(postcss([CSSImport, mixins, nested, simpleVars, hexrgba, autoprefixer])) 
        .on('error', function(errorInfo){
         console.log(errorInfo.toString())    
-        this.emit('end');       
+        this.emit('end');   //ends without gulp watch crashing?    
         })
         .pipe(gulp.dest('./app/temp/styles'))
             

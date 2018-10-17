@@ -1,0 +1,36 @@
+.wrapper {
+    padding-left: 18px; /* features section needs this padding however testimonial section has an additoinal div which doesn't need padding hence why there
+    are two setes of padding isntructions */
+    padding-right: 18px;
+    max-width: 1236px;  /* add 36px to take into account 2x padding which is assimilarted by border box fix */
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; /*gets rid of negative margin*/
+
+&--narrow {
+    max-width: 470px;
+}
+   
+&--no-padding-until-medium {
+    padding-left: 0;
+    padding-right: 0;
+    @mixin atMedium {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+&--medium {
+    max-width: 976px;
+}
+.wrapper {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+&--b-margin {
+    margin-bottom: 1rem;
+    @mixin atSmall {
+        margin-bottom: 3.875rem;
+    }
+}
+}

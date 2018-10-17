@@ -1,0 +1,111 @@
+.row {
+
+@mixin clearfix;
+
+&--gutters {
+    margin-right: -65px; /* using negative margin to elminate right hand spacing by dragging it to the right*/
+}
+
+&--gutters-large {
+    margin-right: -100px; /* using negastive margin to elminate right hand spacing by dragging it to the right*/
+}
+
+&--gutters-small {
+    margin-right: -45px; /* using negastive margin to elminate right hand spacing by dragging it to the right*/
+}
+
+&--gutters > div {
+        padding-right: 65px;
+}
+
+&--gutters-large > div {
+    padding-right: 100px;
+}
+
+&--gutters-small > div {
+    padding-right: 45px;
+}
+
+&__b-margin-until-medium {
+    margin-bottom: 1rem;
+}
+
+@mixin atMedium {
+    &__b-margin-until-medium {
+        margin-bottom: 0;
+    }
+
+    &__medium-4 {
+        float: left;
+        width: 33.33%;
+            &--larger {
+                width: 37%;
+            }
+        }   
+        
+        &__medium-6 {
+            float: left;
+            width: 50%;
+            }   
+    
+
+    &__medium-8 {
+        float: right;
+        width: 66.66%;
+            &--smaller {
+                width: 63%;
+            }
+        }
+    }  
+    @mixin atLarge {
+        &__b-margin-until-large {
+            margin-bottom: 0;
+        }
+    
+        &__large-4 {
+            float: left;
+            width: 33.33%;
+                &--larger {
+                    width: 37%;
+                }
+            }   
+            
+            &__large-6 {
+                float: left;
+                width: 50%;
+                }   
+        
+    
+        &__large-8 {
+            float: right;
+            width: 66.66%;
+                &--smaller {
+                    width: 63%;
+                }
+            }
+        }  
+&--t-padding {
+    padding-top: 80px;
+}
+/* flex box to adjust equal height of of boxes */
+.flexbox &--equal-height-at-medium {
+    @mixin atMedium {
+        display: flex;
+    }
+& > div {   
+    float: none;
+    display: flex;
+      }
+    }
+
+  .flexbox  &--equal-height-at-large {
+        @mixin atLarge {
+            display: flex;
+        }
+    & > div {   
+        float: none;
+        display: flex;
+          }
+        }
+}
+
