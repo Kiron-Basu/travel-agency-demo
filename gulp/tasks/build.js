@@ -38,7 +38,7 @@ return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/icons', '!./a
 })
 
 gulp.task('useMinTrigger', ['deleteDistFolder'], function() {
-    gulp.start(useMin);
+    gulp.start('useMin');
 });
 
 gulp.task('useMin',['styles', 'scripts'], function() { //same with syles and scripts
